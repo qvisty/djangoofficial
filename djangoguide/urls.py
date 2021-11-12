@@ -18,6 +18,7 @@ from django.urls import path
 from django.urls.conf import include
 
 urlpatterns = [
+    path('', include('polls.urls')), #bør slettes. mest bare for startsiden
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
 ]
